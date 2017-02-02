@@ -1,5 +1,7 @@
 {
   "name": "super-rentals",
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "firebase": "^3.0.0"
   }
 }

@@ -1,5 +1,19 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li>{{#link-to 'task'}}Tasks{{/link-to}}</li>
+      <li>{{#link-to 'task.new'}}New Task{{/link-to}}</li>
+      </ul>
+  </div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+			{{outlet}}
+		</div>
+	</div>
+</div>

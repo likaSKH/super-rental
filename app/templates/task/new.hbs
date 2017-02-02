@@ -1,0 +1,17 @@
+<form method="GET" >
+<div class="form-group">
+	<label>New Task</label>
+	{{input type='text' class='form-control' value=title plaseholder='Title' name='title' }}
+</div>
+<div class="form-group">
+	<label>Date</label>
+	{{input type='date' class='form-control' value=date  name='date' }}
+</div>
+<div class=" form-group">
+	<label>Description</label>
+	{{input type='textarea' class='form-control' value=description name='Description' plaseholder='Description goes here...' }}
+</div>
+<button class="btn btn-default" {{action 'addTask'}}>Submit</button>
+</form>
+
+{{outlet}}
